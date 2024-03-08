@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.20)  8 MAR 2024 16:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.20)  8 MAR 2024 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -882,7 +882,11 @@ Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 102.
 
-(tmp/main.aux)
+(tmp/main.aux
+
+LaTeX Warning: Label `fig:enter-label' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 192.
@@ -1050,63 +1054,117 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \includegraphics on input line 192.
  (tmp/main.nav)
+<figures/png/mu2e_logo_oval.png, id=14, 34.08963pt x 19.63562pt>
+File: figures/png/mu2e_logo_oval.png Graphic file (type png)
+
+<use figures/png/mu2e_logo_oval.png>
+Package pdftex.def Info: figures/png/mu2e_logo_oval.png used on input line 239.
+
+(pdftex.def)             Requested size: 49.39903pt x 28.45274pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 237.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 239.
 
 
 LaTeX Font Warning: Font shape `T1/ptm/s/n' undefined
-(Font)              using `T1/ptm/m/n' instead on input line 237.
+(Font)              using `T1/ptm/m/n' instead on input line 239.
 
-<figures/png/FNAL-Logo-NAL-Blue.png, id=17, 456.70625pt x 86.3225pt>
+<figures/png/FNAL-Logo-NAL-Blue.png, id=19, 456.70625pt x 86.3225pt>
 File: figures/png/FNAL-Logo-NAL-Blue.png Graphic file (type png)
 
 <use figures/png/FNAL-Logo-NAL-Blue.png>
 Package pdftex.def Info: figures/png/FNAL-Logo-NAL-Blue.png used on input line 
-237.
+239.
 (pdftex.def)             Requested size: 150.53233pt x 28.45274pt.
 
-<figures/pdf/cherubino.pdf, id=19, 287.22305pt x 292.87418pt>
+<figures/pdf/cherubino.pdf, id=20, 287.22305pt x 292.87418pt>
 File: figures/pdf/cherubino.pdf Graphic file (type pdf)
 
 <use figures/pdf/cherubino.pdf>
-Package pdftex.def Info: figures/pdf/cherubino.pdf used on input line 237.
+Package pdftex.def Info: figures/pdf/cherubino.pdf used on input line 239.
 (pdftex.def)             Requested size: 44.64621pt x 45.52458pt.
  [1
 
-{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/png/FN
-AL-Logo-NAL-Blue.png> <./figures/pdf/cherubino.pdf>]
-<figures/jpg/IMG_20240219_090538.jpg, id=59, 1676.2625pt x 1257.69875pt>
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/png/mu
+2e_logo_oval.png> <./figures/png/FNAL-Logo-NAL-Blue.png> <./figures/pdf/cherubi
+no.pdf>]
+<figures/jpg/IMG_20240219_090538.jpg, id=61, 1676.2625pt x 1257.69875pt>
 File: figures/jpg/IMG_20240219_090538.jpg Graphic file (type jpg)
 
 <use figures/jpg/IMG_20240219_090538.jpg>
 Package pdftex.def Info: figures/jpg/IMG_20240219_090538.jpg used on input line
- 262.
+ 265.
 (pdftex.def)             Requested size: 171.14764pt x 128.40639pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 262.
+LaTeX Font Info:    Try loading font information for U+msa on input line 265.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 262.
+LaTeX Font Info:    Try loading font information for U+msb on input line 265.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 262.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 265.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 262.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 265.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 262.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 265.
  [2
 
- <./figures/jpg/IMG_20240219_090538.jpg>] [3
+ <./figures/jpg/IMG_20240219_090538.jpg>]
 
-]
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 \end{frame}
+                 
+? 
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 \end{frame}
+                 
+? 
+
+Overfull \vbox (62.84845pt too high) detected at line 287
+ []
+
+[3
+
+] <figures/pdf/waveform_50_link_2.pdf, id=117, 569.12625pt x 388.45125pt>
+File: figures/pdf/waveform_50_link_2.pdf Graphic file (type pdf)
+
+<use figures/pdf/waveform_50_link_2.pdf>
+Package pdftex.def Info: figures/pdf/waveform_50_link_2.pdf used on input line 
+310.
+(pdftex.def)             Requested size: 176.28186pt x 120.31787pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-lab
+el}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.310 \end{frame}
+                 
+Overfull \hbox (5.13422pt too wide) in paragraph at lines 310--310
+ [][][][] 
+ []
+
+[4
+
+ <./figures/pdf/waveform_50_link_2.pdf, page is rotated 90 degrees>]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1116,35 +1174,41 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
- (tmp/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
+
+(tmp/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 267.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
  ) 
 Here is how much of TeX's memory you used:
- 19728 strings out of 495063
- 381089 string characters out of 3182201
- 451499 words of memory out of 3000000
- 22392 multiletter control sequences out of 15000+200000
- 33206 words of font info for 50 fonts, out of 3000000 for 9000
+ 19753 strings out of 495063
+ 381710 string characters out of 3182201
+ 452538 words of memory out of 3000000
+ 22411 multiletter control sequences out of 15000+200000
+ 35478 words of font info for 52 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,16n,57p,425b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb>
-Output written on tmp/main.pdf (3 pages, 504021 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tmp/main.pdf (4 pages, 590200 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 8 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
+ 10 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

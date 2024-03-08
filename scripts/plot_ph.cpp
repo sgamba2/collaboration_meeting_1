@@ -43,10 +43,10 @@ void plot_fs(int RunNumber){
 }
 void plot_wf(int RunNumber){
 
- TFile *f=TFile::Open(Form("trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+ TFile *f=TFile::Open(Form("../../trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
 
  TH1F * h2 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_1/ch_50/h_wf_ch_50_2");
-
+ TCanvas * c1 = new TCanvas("c1","c1");
  h2->SetLineColor(4);
  h2->SetFillColor(4);
  h2->SetFillStyle(3002);
@@ -56,4 +56,5 @@ void plot_wf(int RunNumber){
  h2->SetTitle(Form("RUN:%d, ch50, TS2, Waveform",RunNumber));
  gStyle->SetOptStat(1111111);
  h2->Draw("B");
+ c1->SaveAs("../figures/pdf/waveform_50_link_2.pdf");
 }
