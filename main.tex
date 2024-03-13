@@ -137,7 +137,11 @@
 
 % \beamerdefaultoverlayspecification{<+->}
 
-
+\hypersetup{%
+  colorlinks=UBCblue,% hyperlinks will be black
+  linkbordercolor=UBCblue,% hyperlink borders will be red
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COMMANDS
@@ -239,6 +243,21 @@
 \end{frame}
 
 \begin{frame}{Working area}
+scrivere chi ha partecipato
+what i am reporting is based on work done by...
+contesto:we are going to the first station being read, we should know how to read detector
+integratione e commissioning
+testing the daq works
+learning about errors and data transmission
+ci sono istogrammi per errori
+global run details: prima instabile 
+abbiamo ancora il firmware vecchio su daq09
+non ancora testato ilsoftware nuobo e accennare il rate ma non e un problema perche possiamo continuare a caratterizzare abbastanza bene l apparato (artdaq non e stato testato a quei rate) e pure slow control
+daq is composed of controlling, monitoring and data flowing
+gains, voltages devono essere controllati
+slide con immagine del tracker board : hardware building that dtc-dtc connection
+event building avverra nel dtc , not for cosmics
+to be done: implementare lo slow control dei lowhigh voltage
     \begin{columns}
         \begin{column}{0.5\framewidth}
             \begin{figure}[H]
@@ -252,8 +271,9 @@
             \item 3 test stands (TS0,1,2) \@ IERC;
             \item Optical fibers connect them to the DTC installed in the DAQ computer mu2edaq09;
             \item Each teststand has 96 channels;
-            \item A pulser implemented in the DRACs is sending pulses to the preamps (CAL side) at 50 kHz;
-            \item Pulses are digitized at 40 MHz;
+            \item A pulser implemented in the DRACs is sending pulses to the preamps (CAL side) at 50 kHz (variabile ma si e testato cosi);
+            \item Pulses are digitized at 40 MHz (we were not able to buy adc at 50 Mhz);
+              
             \item Only 12 channels pulsed per RUN (one pulse every 8 channels);
             \item We are using 1 or 2 ROCs at the same time.
             \end{itemize}
@@ -264,37 +284,27 @@
   $ \Rightarrow$ \textbf{ Data Quality Monitoring}
 \end{frame}
 \begin{frame}{Description of the teststand setup}
-\begin{columns}
-\begin{column}{0.5\framewidth}
-\begin{itemize}
-\item 
-\end{itemize}
- A timing
-diagram of a single channel readout is shown in Fig. 5. Pulses, separated by Tgen = 1/fgen, where fgen is
-the generator frequency are represented by gray triangles. The event window, with the width of TEW , that
-represents the distance between the proton pulses, was varied from 700 ns to 50$\mu$s. The ROC firmware has
-an internal hit buffer which stores up to 255 hits. Depending on Tgen and TEW , the data taking can proceed
-in two different scenarios:
- The event window is large enough , so the total number of generated hits is greater than 255. In this
-case the ROC hit buffer always gets filled up, and only the first 255 hits are read out;
- The total number of hits within the event window is less than 255. In this case the ROC hit buffer
-doesn’t get filled up and the total number of hits may vary from one event to another.
-Each digi FPGA has its own pulse generator and the pulse sequences from the two generators are offset
-with respect to each other by a time interval $\Delta$t. The offset is constant for as long as the DRAC board
-is powered up and varies randomly between 0 and Tgen when DRAC is powercycled. The timing of the
-readout is uncorrelated with the generator timing sequences, so the number of pulses within the readout
-window can vary from from one event to another, as shown in Figure 5.
-Relative timing offsets of the channels within the same FPGA are of the order of a few nanoseconds.
-The channel readout sequence is fixed and is presented in Appendix 7.
-\end{column}
-\begin{column}{0.5\framewidth}
+%\begin{columns}
+%\begin{column}{0.5\framewidth}
  \begin{figure}[H]
    \centering
-   \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_50_link_2.pdf}
+   \includegraphics[width= 1.0\columnwidth]{figures/png/Screenshot_20240308_165327.png}
    \label{fig:djn}
  \end{figure}
-\end{column}
-\end{columns}
+\begin{itemize}
+\item Pulses are separated by 20 $\mu$s (1/$f_{gen}$) - trying to learn how to use it;
+\item EW can be varied between 700 ns and 50 $\mu$s;
+\item ROC hit buffer stores up to 255 hits (\href{https://mu2e-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=47837&filename=mu2e-47837.pdf&version=1}{DocDB47837});
+\item The timing of the
+readout is uncorrelated with the generator timing sequences$\rightarrow$number of readout pulses is variable;
+\item The channel readout sequence is fixed.
+\end{itemize}
+
+%\end{column}
+%\begin{column}{0.5\framewidth}
+
+%\end{column}
+%\end{columns}
            
 \end{frame}
 \begin{frame}{Waveforms}
@@ -303,10 +313,13 @@ The channel readout sequence is fixed and is presented in Appendix 7.
 We can plot:
 \begin{itemize}
 \item Number of hits vs channel;
-\item Waveform shape;
-\item First Sample ($Wf_{thr}$ > 5);
-\item Charge;
-\item Pulse Height;
+\item waveform shape;
+\item first sample ($Wf_{thr}$ > 5) distribution;
+\item charge distribution;
+\item pulse height distribution;
+\item tail charge distribution;
+\item $\Delta t$ distribution between hits.
+\item Error found : XXX
 \end{itemize}
 \end{column}
 \begin{column}{0.5\framewidth}
@@ -317,7 +330,41 @@ We can plot:
  \end{figure}
 \end{column}
 \end{columns}
-           
+\end{frame}
+\begin{frame}{Bit errors in wf}
+\end{columns}
+\end{frame}
 
+\begin{frame}{Number of hits versus channel number}
+\begin{columns}
+\begin{column}{0.5\framewidth}
+\end{column}
+\begin{column}{0.5\framewidth}
+cross talks, in odd channels and asymmetric
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{features vs channel}
+\begin{columns}
+\begin{column}{0.5\framewidth}
+\end{column}
+\begin{column}{0.5\framewidth}
+we look at the mean value and from there we establish the critical channels
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}{analysis of the charge and pulse height}
+\end{frame}
+\begin{frame}{tmean}
+\end{frame}
+\begin{frame}{analysis of delta t between hits and negative waveforms}
+lower value of charge and pulse height 
+\end{frame}
+\begin{frame}{more hits in one channel than 2/3}
+\end{frame}
+\begin{frame}{less hits in one channel than 2/3 and dead channels}
+\end{frame}
+\begin{frame}{glitches}
 \end{frame}
 \end{document}
