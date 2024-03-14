@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.20)  14 MAR 2024 14:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.20)  14 MAR 2024 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,6 +924,18 @@ LaTeX Warning: Label `fig:wffytl' multiply defined.
 
 LaTeX Warning: Label `fig:wffytl' multiply defined.
 
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1255,61 +1267,113 @@ Overfull \vbox (5.51889pt too high) detected at line 452
  <./figures/pdf/waveform_50_link_2.pdf, page is rotated 90 degrees> <./figures/
 pdf/waveform_50_link_2_neg.pdf, page is rotated 90 degrees> <./figures/pdf/wave
 form_biterror.pdf, page is rotated 90 degrees>]
-<figures/pdf/fs_vs_ch.pdf, id=525, 569.12625pt x 388.45125pt>
+<figures/pdf/fs_vs_ch.pdf, id=526, 569.12625pt x 388.45125pt>
 File: figures/pdf/fs_vs_ch.pdf Graphic file (type pdf)
 
 <use figures/pdf/fs_vs_ch.pdf>
-Package pdftex.def Info: figures/pdf/fs_vs_ch.pdf used on input line 481.
-(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+Package pdftex.def Info: figures/pdf/fs_vs_ch.pdf used on input line 485.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.481 \end{frame}
-                 
-<figures/pdf/bl_vs_ch.pdf, id=526, 569.12625pt x 388.45125pt>
-File: figures/pdf/bl_vs_ch.pdf Graphic file (type pdf)
-
-<use figures/pdf/bl_vs_ch.pdf>
-Package pdftex.def Info: figures/pdf/bl_vs_ch.pdf used on input line 481.
-(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.481 \end{frame}
+l.485 \end{frame}
                   <figures/pdf/q_vs_ch.pdf, id=527, 569.12625pt x 388.45125pt>
 File: figures/pdf/q_vs_ch.pdf Graphic file (type pdf)
 
 <use figures/pdf/q_vs_ch.pdf>
-Package pdftex.def Info: figures/pdf/q_vs_ch.pdf used on input line 481.
-(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+Package pdftex.def Info: figures/pdf/q_vs_ch.pdf used on input line 485.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.481 \end{frame}
+l.485 \end{frame}
                  
-<figures/pdf/ph_vs_ch.pdf, id=528, 569.12625pt x 388.45125pt>
+<figures/pdf/bl_vs_ch.pdf, id=528, 569.12625pt x 388.45125pt>
+File: figures/pdf/bl_vs_ch.pdf Graphic file (type pdf)
+
+<use figures/pdf/bl_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/bl_vs_ch.pdf used on input line 485.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.485 \end{frame}
+                 
+<figures/pdf/ph_vs_ch.pdf, id=529, 569.12625pt x 388.45125pt>
 File: figures/pdf/ph_vs_ch.pdf Graphic file (type pdf)
 
 <use figures/pdf/ph_vs_ch.pdf>
-Package pdftex.def Info: figures/pdf/ph_vs_ch.pdf used on input line 481.
-(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+Package pdftex.def Info: figures/pdf/ph_vs_ch.pdf used on input line 485.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.481 \end{frame}
+l.485 \end{frame}
                  
-Overfull \vbox (71.66742pt too high) detected at line 481
+Overfull \vbox (3.81467pt too high) detected at line 485
  []
 
 [9
 
- <./figures/pdf/fs_vs_ch.pdf, page is rotated 90 degrees> <./figures/pdf/bl_vs_
-ch.pdf, page is rotated 90 degrees> <./figures/pdf/q_vs_ch.pdf, page is rotated
+ <./figures/pdf/fs_vs_ch.pdf, page is rotated 90 degrees> <./figures/pdf/q_vs_c
+h.pdf, page is rotated 90 degrees> <./figures/pdf/bl_vs_ch.pdf, page is rotated
  90 degrees> <./figures/pdf/ph_vs_ch.pdf, page is rotated 90 degrees>]
+<figures/pdf/p.pdf, id=728, 569.12625pt x 478.78876pt>
+File: figures/pdf/p.pdf Graphic file (type pdf)
+ <use figures/pdf/p.pdf>
+Package pdftex.def Info: figures/pdf/p.pdf used on input line 519.
+(pdftex.def)             Requested size: 145.47653pt x 122.38539pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.519 \end{frame}
+                  <figures/pdf/tmean.pdf, id=729, 569.12625pt x 388.45125pt>
+File: figures/pdf/tmean.pdf Graphic file (type pdf)
+
+<use figures/pdf/tmean.pdf>
+Package pdftex.def Info: figures/pdf/tmean.pdf used on input line 519.
+(pdftex.def)             Requested size: 145.47653pt x 99.29381pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.519 \end{frame}
+                  <figures/pdf/phtmean.pdf, id=730, 569.12625pt x 388.45125pt>
+File: figures/pdf/phtmean.pdf Graphic file (type pdf)
+
+<use figures/pdf/phtmean.pdf>
+Package pdftex.def Info: figures/pdf/phtmean.pdf used on input line 519.
+(pdftex.def)             Requested size: 145.47653pt x 99.29381pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.519 \end{frame}
+                  <figures/png/pres.png, id=731, 1850.112pt x 953.964pt>
+File: figures/png/pres.png Graphic file (type png)
+
+<use figures/png/pres.png>
+Package pdftex.def Info: figures/png/pres.png used on input line 519.
+(pdftex.def)             Requested size: 222.49245pt x 114.71819pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.519 \end{frame}
+                 
+Overfull \vbox (2.10422pt too high) detected at line 519
+ []
+
+[10
+
+ <./figures/pdf/p.pdf, page is rotated 90 degrees> <./figures/pdf/tmean.pdf, pa
+ge is rotated 90 degrees> <./figures/pdf/phtmean.pdf, page is rotated 90 degree
+s> <./figures/png/pres.png>]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1319,12 +1383,11 @@ ch.pdf, page is rotated 90 degrees> <./figures/pdf/q_vs_ch.pdf, page is rotated
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
-
-(tmp/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 534.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 534.
+ (tmp/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 534.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 534.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
@@ -1334,13 +1397,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 501.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 534.
  ) 
 Here is how much of TeX's memory you used:
- 19882 strings out of 495063
- 384678 string characters out of 3182201
- 455124 words of memory out of 3000000
- 22510 multiletter control sequences out of 15000+200000
+ 19906 strings out of 495063
+ 385146 string characters out of 3182201
+ 455125 words of memory out of 3000000
+ 22528 multiletter control sequences out of 15000+200000
  49714 words of font info for 69 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,16n,57p,425b,717s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1352,10 +1415,10 @@ ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tmp/main.pdf (9 pages, 6457408 bytes).
+Output written on tmp/main.pdf (10 pages, 8127342 bytes).
 PDF statistics:
- 761 PDF objects out of 1000 (max. 8388607)
- 458 compressed objects within 5 object streams
- 24 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 538 compressed objects within 6 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -152,3 +152,68 @@ TH1F * h4 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ph_vs_ich");
  h4->Draw("");
  c4->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/ph_vs_ch.pdf");
 }
+void plot_p(int RunNumber){
+
+ TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+
+ TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_66/ch_66_ph_vs_tmean");
+ TH1F * h2 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_66/ch_66_tmean");
+ TCanvas * c2 = new TCanvas("c2","c2");
+
+ 
+ h1->SetLineColor(4);
+ h1->SetFillColor(4);
+ h1->SetFillStyle(3002);
+ h1->SetBarWidth(0.84);
+ h1->SetBarOffset(0.5);
+ h1->GetXaxis()->SetTitle("t_{mean}");
+h1->GetYaxis()->SetTitle("pulse height");
+ h1->SetTitle(Form("RUN:%d, ch66, Pulse Height vs T_{mean}",RunNumber));
+ gStyle->SetOptStat(1111111);
+ h1->Draw("");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/phtmean.pdf");
+TCanvas * c3 = new TCanvas("c3","c3");
+ h2->SetLineColor(4);
+ h2->SetFillColor(4);
+ h2->SetFillStyle(3002);
+ h2->SetBarWidth(0.84);
+ h2->SetBarOffset(0.5);
+ h2->GetXaxis()->SetTitle("t_{mean}");
+h1->GetYaxis()->SetTitle("counts");
+ h2->SetTitle(Form("RUN:%d, ch66, T_{mean} distribution",RunNumber));
+ h2->Draw("");
+ c3->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/tmean.pdf");
+}
+void plot_chph(int RunNumber){
+
+ TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+
+ TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_66/ch_66_ph");
+ TH1F * h2 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_66/ch_66_q");
+ TCanvas * c2 = new TCanvas("c2","c2",1400,1200);
+
+ c2->Divide(1,2);
+ c2->cd(1);
+ h1->SetLineColor(4);
+ h1->SetFillColor(4);
+ h1->SetFillStyle(3002);
+ h1->SetBarWidth(0.84);
+ h1->SetBarOffset(0.5);
+ h1->GetXaxis()->SetTitle("pulse height");
+ h1->GetYaxis()->SetTitle("counts");
+ h1->SetTitle(Form("RUN:%d, ch66, Pulse Height Distribution",RunNumber));
+ gStyle->SetOptStat(1111111);
+ h1->Draw("");
+
+ c2->cd(2);
+ h2->SetLineColor(4);
+ h2->SetFillColor(4);
+ h2->SetFillStyle(3002);
+ h2->SetBarWidth(0.84);
+ h2->SetBarOffset(0.5);
+h2->GetXaxis()->SetTitle("charge");
+ h1->GetYaxis()->SetTitle("counts");
+ h2->SetTitle(Form("RUN:%d, ch66, Charge Distribution",RunNumber));
+ h2->Draw("");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/p.pdf");
+}
