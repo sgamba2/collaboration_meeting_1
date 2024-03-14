@@ -31,7 +31,7 @@
 % or whatever
 
 \usepackage{hyperref}
-
+\usepackage{cancel}
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \usetikzlibrary{decorations.markings}
@@ -42,7 +42,7 @@
 \usepackage{graphics}
 % \usepackage{subfigure}
 % \usepackage{scalefnt}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 % \renewcommand\thesubfigure{\arabic{subfigure}}
 
 \graphicspath{{figures}}
@@ -98,7 +98,7 @@
 \author[Sara Gamba]{
   \fontseries{s}
   \selectfont
-  { Sara Gamba, University of Pisa \\ Pavel Murat, FNAL  }
+  { Sara Gamba, University of Pisa \\ \vspace{4mm} Presenting on behalf of Tracker DAQ group: \\ P. Murat (FNAL), M. Tecchio (University of Michigan), R. Bonventre (LBNL), V. Rusu (FNAL)}
 }
 
 % \date{\today}
@@ -242,13 +242,8 @@
 
 \end{frame}
 
-\begin{frame}{Working area}
-scrivere chi ha partecipato
-what i am reporting is based on work done by...
-contesto:we are going to the first station being read, we should know how to read detector
-integratione e commissioning
-testing the daq works
-learning about errors and data transmission
+
+
 ci sono istogrammi per errori
 global run details: prima instabile 
 abbiamo ancora il firmware vecchio su daq09
@@ -258,6 +253,26 @@ gains, voltages devono essere controllati
 slide con immagine del tracker board : hardware building that dtc-dtc connection
 event building avverra nel dtc , not for cosmics
 to be done: implementare lo slow control dei lowhigh voltage
+\begin{frame}{A snapshot of the current job}
+\vspace{-3mm}
+\begin{itemize}
+\item Currently in the phase of commissioning and integration;
+\vspace{3mm}
+\item Reading from a tracker station is imminent;
+\vspace{3mm}
+\item We need to know how to read the detector;
+\vspace{3mm}
+\item Learning about errors and data transmission;
+\vspace{3mm}
+\item A functional DAQ is needed.
+\vspace{5mm}
+\end{itemize}
+$\Rightarrow$ The rest of the talk will be about \textbf{Data Quality Monitoring}
+\\
+\vspace{5mm}
+$\Rightarrow$ Some updates form \textbf{GR1} will be given too
+\end{frame}
+\begin{frame}{Working area}
     \begin{columns}
         \begin{column}{0.5\framewidth}
             \begin{figure}[H]
@@ -265,97 +280,214 @@ to be done: implementare lo slow control dei lowhigh voltage
                 \includegraphics[width= \columnwidth]{figures/jpg/IMG_20240219_090538.jpg}
                 \label{fig:enter-label}
             \end{figure}
+\vspace{2mm}
+            \begin{itemize}
+            \item 3 test stands @IERC (only 2 have been used).
+            \end{itemize}
         \end{column}
         \begin{column}{0.5\framewidth}
             \begin{itemize}
-            \item 3 test stands (TS0,1,2) \@ IERC;
-            \item Optical fibers connect them to the DTC installed in the DAQ computer mu2edaq09;
+            \item DRAC card connected to the DTC installed in the DAQ computer mu2edaq09 via optical fibers;
+\vspace{2mm}
             \item Each teststand has 96 channels;
-            \item A pulser implemented in the DRACs is sending pulses to the preamps (CAL side) at 50 kHz (variabile ma si e testato cosi);
-            \item Pulses are digitized at 40 MHz (we were not able to buy adc at 50 Mhz);
-              
-            \item Only 12 channels pulsed per RUN (one pulse every 8 channels);
+\vspace{2mm}
+            \item A pulser implemented in the DRACs is sending pulses to the preamps (CAL side) at 50 kHz;
+\vspace{2mm}
+            \item Pulses are digitized at 40 MHz;
+\vspace{2mm}
+            \item 12 channels pulsed per RUN;
+\vspace{2mm}
             \item We are using 1 or 2 ROCs at the same time.
             \end{itemize}
         \end{column}
     \end{columns}
     \vspace{5mm}
-\centering
-  $ \Rightarrow$ \textbf{ Data Quality Monitoring}
 \end{frame}
+
 \begin{frame}{Description of the teststand setup}
-%\begin{columns}
-%\begin{column}{0.5\framewidth}
  \begin{figure}[H]
    \centering
-   \includegraphics[width= 1.0\columnwidth]{figures/png/Screenshot_20240308_165327.png}
+   \includegraphics[width= 1.0\textwidth]{figures/png/Screenshot_20240308_165327.png}
    \label{fig:djn}
  \end{figure}
 \begin{itemize}
-\item Pulses are separated by 20 $\mu$s (1/$f_{gen}$) - trying to learn how to use it;
+\item Pulses are separated by 1/$f_{gen}$;
 \item EW can be varied between 700 ns and 50 $\mu$s;
-\item ROC hit buffer stores up to 255 hits (\href{https://mu2e-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=47837&filename=mu2e-47837.pdf&version=1}{DocDB47837});
-\item The timing of the
-readout is uncorrelated with the generator timing sequences$\rightarrow$number of readout pulses is variable;
+\item The timing of the readout is uncorrelated with the generator timing sequences$\rightarrow$number of readout pulses is variable;
+\item ROC is reading digiFPGAs;
+\item ROC hit buffer stores up to 255 hits (\href{https://mu2e-docdb.fnal.gov/cgi-bin/sso/RetrieveFile?docid=47837&filename=mu2e-47837.pdf&version=1}{DOCDB47837});
 \item The channel readout sequence is fixed.
 \end{itemize}
-
-%\end{column}
-%\begin{column}{0.5\framewidth}
-
-%\end{column}
-%\end{columns}
-           
 \end{frame}
-\begin{frame}{Waveforms}
+
+\begin{frame}{Available Histograms and Error Identification}
 \begin{columns}
 \begin{column}{0.5\framewidth}
-We can plot:
+Real Time Monitoring:
 \begin{itemize}
-\item Number of hits vs channel;
-\item waveform shape;
-\item first sample ($Wf_{thr}$ > 5) distribution;
-\item charge distribution;
-\item pulse height distribution;
-\item tail charge distribution;
+\item  \textbf{Channel histograms}:
+\begin{itemize}
+\item Time distribution of hits;
+\item Waveforms;
+\item First sample, baseline, charge, pulse height, charge tail and mean time distribution;
 \item $\Delta t$ distribution between hits.
-\item Error found : XXX
+\end{itemize}
+\item \textbf{ROC histograms}:
+\begin{itemize}
+\item Number of hits versus channel;
+\item Waveform mean values versus channel. 
+\end{itemize}
+\item \textbf{Event histograms}:
+\begin{itemize}
+\item Number of hits distribution;
+\item Error distribution;
+\item Number of bytes distribution.
+\end{itemize}
 \end{itemize}
 \end{column}
 \begin{column}{0.5\framewidth}
- \begin{figure}[H]
-   \centering
-   \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_50_link_2.pdf}
-   \label{fig:wfl}
- \end{figure}
+Real Time Diagnostic:
+\vspace{6mm}
+\begin{itemize}
+\item Number of bytes error bit; 
+\vspace{4mm}
+\item Number of ADC packets > 2;
+\vspace{4mm}
+\item Undefined link ID;
+\vspace{4mm}
+\item Invalid channel ID;
+\vspace{4mm}
+\item More hits than the maximum in a given channel.
+\end{itemize}
 \end{column}
 \end{columns}
 \end{frame}
-\begin{frame}{Bit errors in wf}
-\end{columns}
-\end{frame}
+
 
 \begin{frame}{Number of hits versus channel number}
 \begin{columns}
 \begin{column}{0.5\framewidth}
+\vspace{-2mm}
+\begin{itemize}
+\item Need to see cross talks between channels:
+\\
+$\Rightarrow$ one pulsed channel for every eight not pulsed channels.
+\end{itemize}
+\vspace{-4mm}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/nhitsvsch_105421.pdf}
+   \label{fig:wfgkghl}
+ \end{figure}
+\vspace{-6mm}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/nhitsvsch_105423.pdf}
+   \label{fig:wfgkgnvjkhl}
+ \end{figure}
 \end{column}
 \begin{column}{0.5\framewidth}
-cross talks, in odd channels and asymmetric
+\vspace{-7mm}
+\begin{itemize}
+\item  Cross talks in odd pulsed channels only;
+\item  Asymmetric cross talks (e.g. 3$\rightarrow$5, not seen 3$\rightarrow$1).
+\end{itemize}
+\vspace{-4mm}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/nhitsvsch_105420.pdf}
+   \label{fig:wffytl}
+ \end{figure}
+\vspace{-4mm}
+\begin{itemize}
+\item DEAD channels found;
+\item Less hits than expected;
+\item More hits than expected:
+\\
+$\Rightarrow$ $\Delta t$ distribution;
+\\
+$\Rightarrow$ Negative waveforms.
+\end{itemize}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Waveforms}
+\vspace{-4mm}
+\begin{columns}
+\begin{column}{0.5\framewidth}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_50_link_2.pdf}
+   \label{fig:wfgkghl}
+ \end{figure}
+\vspace{-9mm}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_50_link_2_neg.pdf}
+   \label{fig:wfgkgnvjkhl}
+ \end{figure}
+\end{column}
+\begin{column}{0.5\framewidth}
+\vspace{-7mm}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_biterror.pdf}
+   \label{fig:wffytl}
+ \end{figure}
+\begin{itemize}
+{\tiny
+\item Negative peaks (baseline and tail);
+\item Peaks depth is 64, 128 or 192 (6th or/and 7th bit error);
+\item Reconstruction of the waveforms: isolation of negative peaks;
+\item The time interval between hits is always 20 $\mu$s for positive waveforms; 
+\item Time difference distribution between hits for negative waveforms is peaked in 4 or 16 $\mu$s.}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}{Waveform Features versus Channel Number}
+$q, \ ph, \ qt, \ fs$ mean value to identify critical channels (noisy channels, negative waveforms)
+\begin{columns}
+\begin{column}{0.5\framewidth}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/fs_vs_ch.pdf}
+   \label{fig:wffytl}
+ \end{figure}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/bl_vs_ch.pdf}
+   \label{fig:wffytl}
+ \end{figure}
+\end{column}
+\begin{column}{0.5\framewidth}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/q_vs_ch.pdf}
+   \label{fig:wffytl}
+ \end{figure}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/ph_vs_ch.pdf}
+   \label{fig:wffytl}
+ \end{figure}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{features vs channel}
-\begin{columns}
-\begin{column}{0.5\framewidth}
-\end{column}
-\begin{column}{0.5\framewidth}
-we look at the mean value and from there we establish the critical channels
-\end{column}
-\end{columns}
+
+
+
+
+\begin{frame}{Analysis of the charge and pulse height distribution}
 \end{frame}
-\begin{frame}{analysis of the charge and pulse height}
-\end{frame}
+
+\iffalse
 \begin{frame}{tmean}
 \end{frame}
 \begin{frame}{analysis of delta t between hits and negative waveforms}
@@ -367,4 +499,5 @@ lower value of charge and pulse height
 \end{frame}
 \begin{frame}{glitches}
 \end{frame}
+\fi
 \end{document}

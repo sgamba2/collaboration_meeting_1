@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.20)  13 MAR 2024 16:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.20)  14 MAR 2024 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,6 +731,13 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
+
+! LaTeX Error: File `cancel.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
@@ -883,11 +890,41 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 102.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 102.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 102.
+
+
 Package hyperref Warning: Unexpected value `UBCblue'
 (hyperref)                of option `colorlinks' instead of
 (hyperref)                `true' or 'false' on input line 144.
 
-(tmp/main.aux)
+(tmp/main.aux
+
+LaTeX Warning: Label `fig:wfgkghl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wfgkgnvjkhl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
+
+LaTeX Warning: Label `fig:wffytl' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 196.
@@ -1088,141 +1125,191 @@ Package pdftex.def Info: figures/pdf/cherubino.pdf used on input line 243.
 {/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/png/mu
 2e_logo_oval.png> <./figures/png/FNAL-Logo-NAL-Blue.png> <./figures/pdf/cherubi
 no.pdf>]
-<figures/jpg/IMG_20240219_090538.jpg, id=61, 1676.2625pt x 1257.69875pt>
-File: figures/jpg/IMG_20240219_090538.jpg Graphic file (type jpg)
-
-<use figures/jpg/IMG_20240219_090538.jpg>
-Package pdftex.def Info: figures/jpg/IMG_20240219_090538.jpg used on input line
- 269.
-(pdftex.def)             Requested size: 171.14764pt x 128.40639pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 269.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 269.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 269.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 274.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 269.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 274.
+LaTeX Font Info:    Try loading font information for U+msa on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 269.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 274.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [2
 
+]
+[3] <figures/jpg/IMG_20240219_090538.jpg, id=114, 1676.2625pt x 1257.69875pt>
+File: figures/jpg/IMG_20240219_090538.jpg Graphic file (type jpg)
+
+<use figures/jpg/IMG_20240219_090538.jpg>
+Package pdftex.def Info: figures/jpg/IMG_20240219_090538.jpg used on input line
+ 305.
+(pdftex.def)             Requested size: 171.14764pt x 128.40639pt.
+ [4
+
  <./figures/jpg/IMG_20240219_090538.jpg>]
-<figures/png/Screenshot_20240308_165327.png, id=90, 1611.77156pt x 529.98pt>
+<figures/png/Screenshot_20240308_165327.png, id=143, 1611.77156pt x 529.98pt>
 File: figures/png/Screenshot_20240308_165327.png Graphic file (type png)
 
 <use figures/png/Screenshot_20240308_165327.png>
 Package pdftex.def Info: figures/png/Screenshot_20240308_165327.png used on inp
-ut line 293.
+ut line 321.
 (pdftex.def)             Requested size: 342.2953pt x 112.55254pt.
- [3
+ [5
 
  <./figures/png/Screenshot_20240308_165327.png>]
-<figures/pdf/waveform_50_link_2.pdf, id=122, 569.12625pt x 388.45125pt>
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 364.
+ [6
+
+]
+<figures/pdf/nhitsvsch_105421.pdf, id=203, 569.12625pt x 279.0425pt>
+File: figures/pdf/nhitsvsch_105421.pdf Graphic file (type pdf)
+
+<use figures/pdf/nhitsvsch_105421.pdf>
+Package pdftex.def Info: figures/pdf/nhitsvsch_105421.pdf used on input line 41
+4.
+(pdftex.def)             Requested size: 171.14764pt x 83.9135pt.
+
+<figures/pdf/nhitsvsch_105423.pdf, id=204, 569.12625pt x 275.0275pt>
+File: figures/pdf/nhitsvsch_105423.pdf Graphic file (type pdf)
+
+<use figures/pdf/nhitsvsch_105423.pdf>
+Package pdftex.def Info: figures/pdf/nhitsvsch_105423.pdf used on input line 41
+4.
+(pdftex.def)             Requested size: 171.14764pt x 82.70612pt.
+
+<figures/pdf/nhitsvsch_105420.pdf, id=205, 569.12625pt x 275.0275pt>
+File: figures/pdf/nhitsvsch_105420.pdf Graphic file (type pdf)
+
+<use figures/pdf/nhitsvsch_105420.pdf>
+Package pdftex.def Info: figures/pdf/nhitsvsch_105420.pdf used on input line 41
+4.
+(pdftex.def)             Requested size: 171.14764pt x 82.70612pt.
+
+Overfull \vbox (4.1247pt too high) detected at line 414
+ []
+
+[7
+
+ <./figures/pdf/nhitsvsch_105421.pdf, page is rotated 90 degrees> <./figures/pd
+f/nhitsvsch_105423.pdf, page is rotated 90 degrees> <./figures/pdf/nhitsvsch_10
+5420.pdf, page is rotated 90 degrees>]
+<figures/pdf/waveform_50_link_2.pdf, id=366, 569.12625pt x 388.45125pt>
 File: figures/pdf/waveform_50_link_2.pdf Graphic file (type pdf)
 
 <use figures/pdf/waveform_50_link_2.pdf>
 Package pdftex.def Info: figures/pdf/waveform_50_link_2.pdf used on input line 
-317.
+452.
 (pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
- [4
-
- <./figures/pdf/waveform_50_link_2.pdf, page is rotated 90 degrees>]
-! Undefined control sequence.
-<recently read> \beamer@colclose 
-                                 
-l.320 \end{frame}
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wfgkghl})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.452 \end{frame}
                  
-? 
-! Undefined control sequence.
-\beamer@doifinframe ...lose {}\beamer@colexitcode 
-                                                  \beamer@todoend \endgroup ...
-l.320 \end{frame}
+<figures/pdf/waveform_50_link_2_neg.pdf, id=367, 569.12625pt x 388.45125pt>
+File: figures/pdf/waveform_50_link_2_neg.pdf Graphic file (type pdf)
+
+<use figures/pdf/waveform_50_link_2_neg.pdf>
+Package pdftex.def Info: figures/pdf/waveform_50_link_2_neg.pdf used on input l
+ine 452.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wfgkgnvjk
+hl}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.452 \end{frame}
                  
-? 
-! Undefined control sequence.
-\beamer@doifinframe ...olexitcode \beamer@todoend 
-                                                  \endgroup \endgroup  \end ...
-l.320 \end{frame}
+<figures/pdf/waveform_biterror.pdf, id=368, 569.12625pt x 388.45125pt>
+File: figures/pdf/waveform_biterror.pdf Graphic file (type pdf)
+
+<use figures/pdf/waveform_biterror.pdf>
+Package pdftex.def Info: figures/pdf/waveform_biterror.pdf used on input line 4
+52.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.452 \end{frame}
                  
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.320 \end{frame}
+Overfull \vbox (5.51889pt too high) detected at line 452
+ []
+
+[8
+
+ <./figures/pdf/waveform_50_link_2.pdf, page is rotated 90 degrees> <./figures/
+pdf/waveform_50_link_2_neg.pdf, page is rotated 90 degrees> <./figures/pdf/wave
+form_biterror.pdf, page is rotated 90 degrees>]
+<figures/pdf/fs_vs_ch.pdf, id=525, 569.12625pt x 388.45125pt>
+File: figures/pdf/fs_vs_ch.pdf Graphic file (type pdf)
+
+<use figures/pdf/fs_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/fs_vs_ch.pdf used on input line 481.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.481 \end{frame}
                  
-? 
+<figures/pdf/bl_vs_ch.pdf, id=526, 569.12625pt x 388.45125pt>
+File: figures/pdf/bl_vs_ch.pdf Graphic file (type pdf)
 
-! LaTeX Error: \begin{document} ended by \end{beamer@framepauses}.
+<use figures/pdf/bl_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/bl_vs_ch.pdf used on input line 481.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.481 \end{frame}
+                  <figures/pdf/q_vs_ch.pdf, id=527, 569.12625pt x 388.45125pt>
+File: figures/pdf/q_vs_ch.pdf Graphic file (type pdf)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.320 \end{frame}
+<use figures/pdf/q_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/q_vs_ch.pdf used on input line 481.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.481 \end{frame}
                  
-? 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.320 \end{frame}
+<figures/pdf/ph_vs_ch.pdf, id=528, 569.12625pt x 388.45125pt>
+File: figures/pdf/ph_vs_ch.pdf Graphic file (type pdf)
+
+<use figures/pdf/ph_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/ph_vs_ch.pdf used on input line 481.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.481 \end{frame}
                  
-? 
-! Too many }'s.
-\endbeamer@frameslide ...amer@framepauses}\egroup 
-                                                  \ifx \beamer@frametitle \@...
-l.320 \end{frame}
-                 
-? 
-! Undefined control sequence.
-\endbeamer@frameslide ...box \else \beamer@zoomer 
-                                                  \fi \beamer@undolabels \be...
-l.320 \end{frame}
-                 
-? 
+Overfull \vbox (71.66742pt too high) detected at line 481
+ []
 
-! LaTeX Error: \begin{document} ended by \end{beamer@frameslide}.
+[9
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.320 \end{frame}
-                 
-? 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.320 \end{frame}
-                 
-? 
-[5
-
-] [6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
-] [11
-
-] [12
-
-]
+ <./figures/pdf/fs_vs_ch.pdf, page is rotated 90 degrees> <./figures/pdf/bl_vs_
+ch.pdf, page is rotated 90 degrees> <./figures/pdf/q_vs_ch.pdf, page is rotated
+ 90 degrees> <./figures/pdf/ph_vs_ch.pdf, page is rotated 90 degrees>]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1232,37 +1319,43 @@ l.320 \end{frame}
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
- (tmp/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
+
+(tmp/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 501.
  ) 
 Here is how much of TeX's memory you used:
- 19794 strings out of 495063
- 382229 string characters out of 3182201
- 451557 words of memory out of 3000000
- 22433 multiletter control sequences out of 15000+200000
- 35478 words of font info for 52 fonts, out of 3000000 for 9000
+ 19882 strings out of 495063
+ 384678 string characters out of 3182201
+ 455124 words of memory out of 3000000
+ 22510 multiletter control sequences out of 15000+200000
+ 49714 words of font info for 69 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,16n,57p,425b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,16n,57p,425b,717s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tmp/main.pdf (12 pages, 920192 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tmp/main.pdf (9 pages, 6457408 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 364 compressed objects within 4 object streams
- 28 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 458 compressed objects within 5 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
