@@ -217,3 +217,39 @@ h2->GetXaxis()->SetTitle("charge");
  h2->Draw("");
  c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/p.pdf");
 }
+void plot_wf_gl(){
+
+ TFile *f=TFile::Open("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.105348.hist");
+
+ TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_96/h_wf_ch_96_1");
+
+TCanvas * c2 = new TCanvas("c2","c2");
+ h1->SetLineColor(4);
+ h1->SetFillColor(4);
+ h1->SetFillStyle(3002);
+ h1->SetBarWidth(0.84);
+ h1->SetBarOffset(0.5);
+ h1->GetXaxis()->SetTitle("sample");
+ h1->SetTitle("RUN:105348, ch00, TS1, Waveform");
+ gStyle->SetOptStat(1111111);
+ h1->Draw("B");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/glitcheswf.pdf");
+}
+void plot_noisy(){
+
+ TFile *f=TFile::Open("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.105344.hist");
+
+ TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_36/h_wf_ch_36_2");
+
+TCanvas * c2 = new TCanvas("c2","c2");
+ h1->SetLineColor(4);
+ h1->SetFillColor(4);
+ h1->SetFillStyle(3002);
+ h1->SetBarWidth(0.84);
+ h1->SetBarOffset(0.5);
+ h1->GetXaxis()->SetTitle("sample");
+ h1->SetTitle("RUN:105344, ch36, TS1, Waveform");
+ gStyle->SetOptStat(1111111);
+ h1->Draw("B");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/noisy.pdf");
+}
