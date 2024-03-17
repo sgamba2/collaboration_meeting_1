@@ -43,7 +43,7 @@ void plot_fs(int RunNumber){
 }
 void plot_wf(int RunNumber){
 
- TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+ TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r002/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
 
  TH1F * h2 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_1/ch_50/h_wf_ch_50_2");
  TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_1/ch_50/h_wf_ch_50_5");
@@ -58,7 +58,7 @@ void plot_wf(int RunNumber){
  h2->SetTitle(Form("RUN:%d, ch50, TS2, Waveform",RunNumber));
  gStyle->SetOptStat(1111111);
  h2->Draw("B");
- c1->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/waveform_50_link_2.pdf");
+ c1->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/waveform_50_link_2.pdf");
 TCanvas * c2 = new TCanvas("c2","c2");
  h1->SetLineColor(4);
  h1->SetFillColor(4);
@@ -69,11 +69,11 @@ TCanvas * c2 = new TCanvas("c2","c2");
  h1->SetTitle(Form("RUN:%d, ch50, TS2, Waveform",RunNumber));
  gStyle->SetOptStat(1111111);
  h1->Draw("B");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/waveform_50_link_2_neg.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/waveform_50_link_2_neg.pdf");
 }
 void plot_wf_bit(int RunNumber){
 
- TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+ TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r002/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
 
  TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_58/h_wf_ch_58_0");
  TCanvas * c2 = new TCanvas("c2","c2");
@@ -87,11 +87,11 @@ void plot_wf_bit(int RunNumber){
  h1->SetTitle(Form("RUN:%d, ch58, TS2, Waveform",RunNumber));
  gStyle->SetOptStat(1111111);
  h1->Draw("B");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/waveform_biterror.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/waveform_biterror.pdf");
 }
 void plot_deltat(int RunNumber){
 
- TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+ TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r002/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
 
  TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_50/ch_50_dt0");
  TCanvas * c2 = new TCanvas("c2","c2");
@@ -105,11 +105,11 @@ void plot_deltat(int RunNumber){
  h1->SetTitle(Form("RUN:%d, ch50, #Delta t_{hits}",RunNumber));
  gStyle->SetOptStat(1111111);
  h1->Draw("");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/deltat.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/deltat.pdf");
 }
 void plot_features(int RunNumber){
 
- TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+ TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r002/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
 
  TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/fs_vs_ich");
  TCanvas * c2 = new TCanvas("c2","c2");
@@ -120,7 +120,7 @@ void plot_features(int RunNumber){
  h1->SetTitle(Form("RUN:%d, First Sample vs Channel",RunNumber));
  gStyle->SetOptStat(11111111);
  h1->Draw("");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/fs_vs_ch.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/fs_vs_ch.pdf");
  TH1F * h2 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/bl_vs_ich");
  TCanvas * c1 = new TCanvas("c1","c1");
 
@@ -130,7 +130,7 @@ void plot_features(int RunNumber){
  h2->SetTitle(Form("RUN:%d, Baseline mean vs Channel",RunNumber));
  gStyle->SetOptStat(11111111);
  h2->Draw("");
- c1->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/bl_vs_ch.pdf");
+ c1->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/bl_vs_ch.pdf");
  TH1F * h3 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/q_vs_ich");
  TCanvas * c3 = new TCanvas("c3","c3");
 
@@ -140,7 +140,7 @@ void plot_features(int RunNumber){
  h3->SetTitle(Form("RUN:%d, Charge mean vs Channel",RunNumber));
  gStyle->SetOptStat(11111111);
  h3->Draw("");
- c3->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/q_vs_ch.pdf");
+ c3->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/q_vs_ch.pdf");
 TH1F * h4 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ph_vs_ich");
  TCanvas * c4 = new TCanvas("c4","c4");
 
@@ -150,11 +150,11 @@ TH1F * h4 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ph_vs_ich");
  h4->SetTitle(Form("RUN:%d, Pulse height mean vs Channel",RunNumber));
  gStyle->SetOptStat(11111111);
  h4->Draw("");
- c4->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/ph_vs_ch.pdf");
+ c4->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/ph_vs_ch.pdf");
 }
 void plot_p(int RunNumber){
 
- TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+ TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r002/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
 
  TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_66/ch_66_ph_vs_tmean");
  TH1F * h2 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_66/ch_66_tmean");
@@ -171,7 +171,7 @@ h1->GetYaxis()->SetTitle("pulse height");
  h1->SetTitle(Form("RUN:%d, ch66, Pulse Height vs T_{mean}",RunNumber));
  gStyle->SetOptStat(1111111);
  h1->Draw("");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/phtmean.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/phtmean.pdf");
 TCanvas * c3 = new TCanvas("c3","c3");
  h2->SetLineColor(4);
  h2->SetFillColor(4);
@@ -182,11 +182,11 @@ TCanvas * c3 = new TCanvas("c3","c3");
 h1->GetYaxis()->SetTitle("counts");
  h2->SetTitle(Form("RUN:%d, ch66, T_{mean} distribution",RunNumber));
  h2->Draw("");
- c3->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/tmean.pdf");
+ c3->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/tmean.pdf");
 }
 void plot_chph(int RunNumber){
 
- TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
+ TFile *f=TFile::Open(Form("/exp/mu2e/app/users/sgamba/r002/trkvst.annex.trk_fragment_ana.%d.hist",RunNumber));
 
  TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_66/ch_66_ph");
  TH1F * h2 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_66/ch_66_q");
@@ -215,11 +215,11 @@ h2->GetXaxis()->SetTitle("charge");
  h1->GetYaxis()->SetTitle("counts");
  h2->SetTitle(Form("RUN:%d, ch66, Charge Distribution",RunNumber));
  h2->Draw("");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/p.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/p.pdf");
 }
 void plot_wf_gl(){
 
- TFile *f=TFile::Open("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.105348.hist");
+ TFile *f=TFile::Open("/exp/mu2e/app/users/sgamba/r002/trkvst.annex.trk_fragment_ana.105348.hist");
 
  TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_96/h_wf_ch_96_1");
 
@@ -233,11 +233,11 @@ TCanvas * c2 = new TCanvas("c2","c2");
  h1->SetTitle("RUN:105348, ch00, TS1, Waveform");
  gStyle->SetOptStat(1111111);
  h1->Draw("B");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/glitcheswf.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/glitcheswf.pdf");
 }
 void plot_noisy(){
 
- TFile *f=TFile::Open("/exp/mu2e/app/users/sgamba/r001/trkvst.annex.trk_fragment_ana.105344.hist");
+ TFile *f=TFile::Open("/exp/mu2e/app/users/sgamba/r002/trkvst.annex.trk_fragment_ana.105344.hist");
 
  TH1F * h1 = (TH1F*)f->Get("TrkFragmentAna/trk/roc_0/ch_36/h_wf_ch_36_2");
 
@@ -251,7 +251,7 @@ TCanvas * c2 = new TCanvas("c2","c2");
  h1->SetTitle("RUN:105344, ch36, TS1, Waveform");
  gStyle->SetOptStat(1111111);
  h1->Draw("B");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/noisy.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/noisy.pdf");
 }
 void plot_deltatl(){
 
@@ -349,7 +349,7 @@ h2->SetTitle("First Sample vs Channel");
  h8->Draw("same");
  h9->Draw("same");
  h1->Draw("same");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/fs_vs_ch.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/fs_vs_ch.pdf");
 }
 
 void plot_features_bl(){
@@ -417,7 +417,7 @@ h2->SetTitle("Baseline mean vs Channel");
  h8->Draw("same");
  h9->Draw("same");
  h1->Draw("same");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/bl_vs_ch.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/bl_vs_ch.pdf");
 }
 
 void plot_features_q(){
@@ -485,7 +485,7 @@ h2->SetTitle("Charge mean vs Channel");
  h8->Draw("same");
  h9->Draw("same");
  h1->Draw("same");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/q_vs_ch.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/q_vs_ch.pdf");
 }
 
 
@@ -554,7 +554,7 @@ h2->SetTitle("Negative Charge mean vs Channel");
  h8->Draw("same");
  h9->Draw("same");
  h1->Draw("same");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/qt_vs_ch.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/qt_vs_ch.pdf");
 }
 void plot_features_ph(){
 
@@ -621,5 +621,5 @@ h2->SetTitle("Pulse Height mean vs Channel");
  h8->Draw("same");
  h9->Draw("same");
  h1->Draw("same");
- c2->SaveAs("/exp/mu2e/app/users/sgamba/r001/collaboration_meeting_1/figures/pdf/ph_vs_ch.pdf");
+ c2->SaveAs("/exp/mu2e/app/users/sgamba/r002/collaboration_meeting_1/figures/pdf/ph_vs_ch.pdf");
 }
