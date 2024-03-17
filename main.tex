@@ -443,24 +443,23 @@ $\Rightarrow$ inverted waveforms (next slide).
 \begin{column}{0.5\framewidth}
 \begin{figure}[H]
    \centering
-   \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_50_link_2.pdf}
+   \includegraphics[width= .90\columnwidth]{figures/pdf/waveform_50_link_2.pdf}
    \label{fig:wfgkghl}
  \end{figure}
-\vspace{-9mm}
+\vspace{-2mm}
 \begin{figure}[H]
    \centering
-   \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_50_link_2_neg.pdf}
+   \includegraphics[width= .90\columnwidth]{figures/pdf/waveform_50_link_2_neg.pdf}
    \label{fig:wfgkgnvjkhl}
  \end{figure}
 \end{column}
 \begin{column}{0.5\framewidth}
-\vspace{-2mm}
 \begin{figure}[H]
    \centering
    \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_biterror.pdf}
    \label{fig:wffytl}
  \end{figure}
-\vspace{-5mm}
+\vspace{-8mm}
 \begin{itemize}
 \item Negative peaks (baseline and tail);
 \item Peaks depth is 64, 128 or 192 (6th or/and 7th bit error);
@@ -472,10 +471,9 @@ $\Rightarrow$ inverted waveforms (next slide).
 \end{columns}
 \end{frame}
 \begin{frame}{Initial DQM Histograms}
-SPLIT IN 2
-Checking that all channel respond the same way to identify problematic channels (noise, inverted wf) DO THIS WITH ALL CHANNELS
+Checking that all channel respond the same way to identify problematic channels (noise, inverted wf) 
 \\
-\vspace{-3mm}
+Fist sample and charge mean versus channel ID:
 \begin{columns}
 \begin{column}{0.5\framewidth}
 \begin{figure}[H]
@@ -483,21 +481,30 @@ Checking that all channel respond the same way to identify problematic channels 
    \includegraphics[width= .90\columnwidth]{figures/pdf/fs_vs_ch.pdf}
    \label{fig:wffytl}
  \end{figure}
-\vspace{-8mm}
+\end{column}
+\begin{column}{0.5\framewidth}
 \begin{figure}[H]
    \centering
    \includegraphics[width= .90\columnwidth]{figures/pdf/q_vs_ch.pdf}
    \label{fig:wffytl}
  \end{figure}
 \end{column}
+\end{columns}
+\end{frame}
+\begin{frame}{Initial DQM Histograms}
+Checking that all channel respond the same way to identify problematic channels (noise, inverted wf) 
+\\
+Baseline and pulse height mean versus channel ID:
+  \begin{columns}
 \begin{column}{0.5\framewidth}
 \begin{figure}[H]
    \centering
    \includegraphics[width= .90\columnwidth]{figures/pdf/bl_vs_ch.pdf}
    \label{fig:wffytl}
  \end{figure}
-\vspace{-8mm}
-\begin{figure}[H]
+\end{column}
+ \begin{column}{0.5\framewidth}
+  \begin{figure}[H]
    \centering
    \includegraphics[width= .90\columnwidth]{figures/pdf/ph_vs_ch.pdf}
    \label{fig:wffytl}
@@ -509,13 +516,24 @@ Checking that all channel respond the same way to identify problematic channels 
 \begin{frame}{Noisy channels}
 \begin{itemize}
 \item noisy channels: value of the charge sistematically lower than the expected;
-
+\item $q \sim 0$;
 \end{itemize}
-\begin{figure}[H]
-   \centering
-   \includegraphics[width= \framewidth]{figures/pdf/noisy.pdf}
-   \label{fig:wffytl}
- \end{figure}
+ \begin{columns}
+  \begin{column}{0.5 \framewidth}
+  \begin{figure}[H]
+     \centering
+     \includegraphics[width= .90\columnwidth]{figures/pdf/glitches.pdf}
+     \label{fig:wffytl}
+   \end{figure}
+  \end{column}
+  \begin{column}{0.5\framewidth}
+  \begin{figure}[H]
+     \centering
+     \includegraphics[width= .90\columnwidth]{figures/pdf/noisy.pdf}
+     \label{fig:wffytl}
+   \end{figure}
+  \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Glitches}
@@ -540,9 +558,20 @@ Checking that all channel respond the same way to identify problematic channels 
 \end{column}
 \end{columns}
 \end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
 \begin{frame}{Analysis of the charge and pulse height distribution}
-WRITE SOMETHING
-\vspace{-6mm}
 \begin{columns}
 \begin{column}{0.5\framewidth}
 \begin{figure}[H]
@@ -577,6 +606,65 @@ BINNING PROBLEM
 \end{column}
 \end{columns}
 \end{frame}
+
+
+\begin{frame}{Analysis of the charge and pulse height distribution}
+  \vspace{-6mm}
+  \begin{columns}
+  \begin{column}{0.5\framewidth}
+  \begin{figure}[H]
+     \centering
+     \includegraphics[width= .85\columnwidth]{figures/pdf/p.pdf}
+     \label{fig:wffytl}
+   \end{figure}
+  \vspace{-8mm}
+  \begin{figure}[H]
+     \centering
+     \includegraphics[width= .85\columnwidth]{figures/pdf/phtmean.pdf}
+     \label{fig:wffytl}
+   \end{figure}
+  \end{column}
+  \begin{column}{0.5\framewidth}
+  \begin{figure}[H]
+     \centering
+     \includegraphics[width= .82\columnwidth]{figures/pdf/tmean.pdf}
+     \label{fig:wffytl}
+   \end{figure}
+  \vspace{-7mm}
+  \\
+  {\tiny $$t_{mean}=\frac{\sum_i t_i \cdot q_i}{\sum_i q_i}$$}
+  \\
+  \vspace{-7mm}
+  \begin{figure}[H]
+     \centering
+     \includegraphics[width= 0.95\columnwidth]{figures/png/pres.png}
+     \label{fig:wffytl}
+   \end{figure}
+  BINNING PROBLEM
+  \end{column}
+  \end{columns}
+  \end{frame}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{frame}{Artdaq Testing}
 \end{frame}
