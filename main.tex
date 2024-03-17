@@ -313,25 +313,29 @@ $\Rightarrow$ The rest of the talk will be about what we are doing and what we h
 \begin{columns}
 \begin{column}{0.5\framewidth}
 Real Time Monitoring:
+\vspace{4mm}
 \begin{itemize}
-\item  \textbf{Channel histograms}:
-\begin{itemize}
-\item Time distribution of hits;
-\item Waveforms;
-\item First sample, baseline, charge, pulse height, charge tail and mean time distribution;
-\item $\Delta t$ distribution between hits.
-\end{itemize}
-\item \textbf{ROC histograms}:
-\begin{itemize}
-\item Number of hits versus channel;
-\item Waveform mean values versus channel. 
-\end{itemize}
-\item \textbf{Event histograms}:
-\begin{itemize}
-\item Number of hits distribution;
-\item Error distribution;
-\item Number of bytes distribution.
-\end{itemize}
+\item  \textbf{Channel histograms}
+\vspace{4mm}
+%\begin{itemize}
+%\item Time distribution of hits;
+%\item Waveforms;
+%\item First sample, baseline, charge, pulse height, charge tail and mean time distribution;
+%\item $\Delta t$ distribution between hits.
+%\end{itemize}
+\item \textbf{ROC histograms}
+\vspace{4mm}
+%\begin{itemize}
+%\item Number of hits versus channel;
+%\item Waveform mean values versus channel. 
+%\end{itemize}
+\item \textbf{Event histograms}
+\vspace{4mm}
+%\begin{itemize}
+%\item Number of hits distribution;
+%\item Error distribution;
+%\item Number of bytes distribution.
+%\end{itemize}
 \end{itemize}
 \end{column}
 \begin{column}{0.5\framewidth}
@@ -348,14 +352,16 @@ Real Time Diagnostic:
 \vspace{2mm}
 \item More hits than the maximum in a given channel.
 \end{itemize}
+\end{column}
+\end{columns}
 \vspace{4mm}
+\centering
 To be implemented:
 \begin{itemize}
 \vspace{2mm}
+\centering
 \item Slow control of the low and high voltages.
 \end{itemize}
-\end{column}
-\end{columns}
 \end{frame}
 
 
@@ -364,54 +370,72 @@ To be implemented:
 \begin{column}{0.5\framewidth}
 \vspace{-2mm}
 \begin{itemize}
-DIVIDE IN THREE
 \item Cross talks between channels:
 \\
-$\Rightarrow$ one pulsed channel out of eight.
+$\Rightarrow$ 1 pulsed channel out of 8.
 \item normal case:
 \end{itemize}
-\vspace{-4mm}
+\vspace{20mm}
+\begin{itemize}
+\item  Cross talks in odd pulsed channels only;
+\item  Asymmetric cross talks (e.g. 3$\rightarrow$5, not seen 3$\rightarrow$1).
+\end{itemize}
+\end{column}
+\begin{column}{0.5\framewidth}
 \begin{figure}[H]
    \centering
    \includegraphics[width= 1.0\columnwidth]{figures/pdf/nhitsvsch_105421.pdf}
    \label{fig:wfgkghl}
  \end{figure}
-\vspace{-6mm}
-\begin{figure}[H]
-   \centering
-   \includegraphics[width= 1.0\columnwidth]{figures/pdf/nhitsvsch_105423.pdf}
-   \label{fig:wfgkgnvjkhl}
- \end{figure}
-\end{column}
-\begin{column}{0.5\framewidth}
-\vspace{-7mm}
-\begin{itemize}
-\item  Cross talks in odd pulsed channels only;
-\item  Asymmetric cross talks (e.g. 3$\rightarrow$5, not seen 3$\rightarrow$1).
-\end{itemize}
-\vspace{-4mm}
+\vspace{2mm}
 \begin{figure}[H]
    \centering
    \includegraphics[width= 1.0\columnwidth]{figures/pdf/nhitsvsch_105420.pdf}
    \label{fig:wffytl}
  \end{figure}
-\vspace{-4mm}
-\begin{itemize}
-\item one DEAD channel found;
-\item Less hits than expected;
-\item More hits than expected:
-\\
-$\Rightarrow$ $\Delta t$ distribution;
-\\
-$\Rightarrow$ inverted waveforms.
-\end{itemize}
 \end{column}
 \end{columns}
 
 \end{frame}
 
+\begin{frame}{Different channels response}
+\vspace{-4mm}
+\begin{columns}
+\begin{column}{0.5\framewidth}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/nhitsvsch_105423.pdf}
+   \label{fig:wfgkgnvjkhl}
+ \end{figure}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= 1.0\columnwidth]{figures/pdf/deltatt.pdf}
+   \label{fig:wfgkgnvjkhl}
+ \end{figure}
+\end{column}
+\begin{column}{0.5\framewidth}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width= .90\columnwidth]{figures/pdf/deltat.pdf}
+   \label{fig:wfgkgnvjkhl}
+ \end{figure}
+
+\begin{itemize}
+\item one DEAD channel found;
+\item Less hits than expected;
+\item More hits than expected:
+\\
+$\Rightarrow$ $\Delta t$ distribution.
+\\
+$\Rightarrow$ inverted waveforms (next slide).
+\item need to reduce pulse duration.
+\end{itemize}
+\end{column}
+\end{columns}
 
 
+
+\end{frame}
 
 \begin{frame}{Waveforms}
 \vspace{-4mm}
@@ -430,19 +454,19 @@ $\Rightarrow$ inverted waveforms.
  \end{figure}
 \end{column}
 \begin{column}{0.5\framewidth}
-\vspace{-7mm}
+\vspace{-2mm}
 \begin{figure}[H]
    \centering
    \includegraphics[width= 1.0\columnwidth]{figures/pdf/waveform_biterror.pdf}
    \label{fig:wffytl}
  \end{figure}
+\vspace{-5mm}
 \begin{itemize}
-{\tiny
 \item Negative peaks (baseline and tail);
-\item Peaks depth is 64, 128 or 192 (6th or/and 7th bit error);scan the position of these dips and check how many channels
+\item Peaks depth is 64, 128 or 192 (6th or/and 7th bit error);
+%;scan the position of these dips and check how many channels
 \item Reconstruction of the waveforms: isolation of negative peaks;
-\item The time interval between hits is always 20 $\mu$s for positive waveforms; 
-\item Time difference distribution between hits for negative waveforms is peaked in 4 or 16 $\mu$s. need to see reducing pulses duration}
+\item Inverted wfs $ \rightarrow \Delta t$ distribution.
 \end{itemize}
 \end{column}
 \end{columns}
@@ -482,18 +506,25 @@ Checking that all channel respond the same way to identify problematic channels 
 \end{columns}
 \end{frame}
 
-\begin{frame}{Noisy channels and glitches}
-SPLIT IN 2
-\begin{columns}
-\begin{column}{0.5\framewidth}
-\vspace{-4mm}
+\begin{frame}{Noisy channels}
+\begin{itemize}
+\item noisy channels: value of the charge sistematically lower than the expected;
+
+\end{itemize}
 \begin{figure}[H]
    \centering
-   \includegraphics[width= .90\columnwidth]{figures/pdf/noisy.pdf}
+   \includegraphics[width= \framewidth]{figures/pdf/noisy.pdf}
    \label{fig:wffytl}
  \end{figure}
-\vspace{-4mm}
+\end{frame}
 
+\begin{frame}{Glitches}
+\begin{itemize}
+\item Different value of charge with respect to "normal", inverted and noisy pulses ($20 \ < \ q \ < \ 70$);
+\item origin of the glitches not understood yet.
+\end{itemize}
+\begin{columns}
+\begin{column}{0.5 \framewidth}
 \begin{figure}[H]
    \centering
    \includegraphics[width= .90\columnwidth]{figures/pdf/glitches.pdf}
@@ -501,11 +532,6 @@ SPLIT IN 2
  \end{figure}
 \end{column}
 \begin{column}{0.5\framewidth}
-\begin{itemize}
-\item noisy channels: value of the charge sistematically lower than the expected;
-\item origin of the glitches not understood yet ($20 \ < \ q \ < \ 70$).
-\end{itemize}
-\vspace{10mm}
 \begin{figure}[H]
    \centering
    \includegraphics[width= .90\columnwidth]{figures/pdf/glitcheswf.pdf}
@@ -514,7 +540,6 @@ SPLIT IN 2
 \end{column}
 \end{columns}
 \end{frame}
-
 \begin{frame}{Analysis of the charge and pulse height distribution}
 WRITE SOMETHING
 \vspace{-6mm}
