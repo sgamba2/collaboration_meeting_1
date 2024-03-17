@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.4.21)  16 MAR 2024 09:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2020.5.20)  16 MAR 2024 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,4 +1076,481 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/pcr/m/n --> T1/pcr/bx/n on input line 197.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
-ic-dictionary/translator-basic-
+ic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bib
+liography-dictionary/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-env
+ironment-dictionary/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-mon
+ths-dictionary/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-num
+bers-dictionary/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-the
+orem-dictionary/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+LaTeX Info: Redefining \includegraphics on input line 197.
+ (tmp/main.nav)
+<figures/png/mu2e_logo_oval.png, id=14, 34.08963pt x 19.63562pt>
+File: figures/png/mu2e_logo_oval.png Graphic file (type png)
+
+<use figures/png/mu2e_logo_oval.png>
+Package pdftex.def Info: figures/png/mu2e_logo_oval.png used on input line 244.
+
+(pdftex.def)             Requested size: 49.39903pt x 28.45274pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 244.
+
+
+LaTeX Font Warning: Font shape `T1/ptm/s/n' undefined
+(Font)              using `T1/ptm/m/n' instead on input line 244.
+
+<figures/png/FNAL-Logo-NAL-Blue.png, id=19, 456.70625pt x 86.3225pt>
+File: figures/png/FNAL-Logo-NAL-Blue.png Graphic file (type png)
+
+<use figures/png/FNAL-Logo-NAL-Blue.png>
+Package pdftex.def Info: figures/png/FNAL-Logo-NAL-Blue.png used on input line 
+244.
+(pdftex.def)             Requested size: 150.53233pt x 28.45274pt.
+
+<figures/pdf/cherubino.pdf, id=20, 287.22305pt x 292.87418pt>
+File: figures/pdf/cherubino.pdf Graphic file (type pdf)
+
+<use figures/pdf/cherubino.pdf>
+Package pdftex.def Info: figures/pdf/cherubino.pdf used on input line 244.
+(pdftex.def)             Requested size: 44.64621pt x 45.52458pt.
+ [1
+
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/png/mu
+2e_logo_oval.png> <./figures/png/FNAL-Logo-NAL-Blue.png> <./figures/pdf/cherubi
+no.pdf>] [2
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 264.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 264.
+LaTeX Font Info:    Try loading font information for U+msa on input line 264.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 264.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3
+
+]
+<figures/jpg/IMG_20240219_090538.jpg, id=53, 1676.2625pt x 1257.69875pt>
+File: figures/jpg/IMG_20240219_090538.jpg Graphic file (type jpg)
+
+<use figures/jpg/IMG_20240219_090538.jpg>
+Package pdftex.def Info: figures/jpg/IMG_20240219_090538.jpg used on input line
+ 295.
+(pdftex.def)             Requested size: 171.14764pt x 128.40639pt.
+ [4
+
+ <./figures/jpg/IMG_20240219_090538.jpg>]
+<figures/png/Screenshot_20240308_165327.png, id=61, 1611.77156pt x 529.98pt>
+File: figures/png/Screenshot_20240308_165327.png Graphic file (type png)
+
+<use figures/png/Screenshot_20240308_165327.png>
+Package pdftex.def Info: figures/png/Screenshot_20240308_165327.png used on inp
+ut line 310.
+(pdftex.def)             Requested size: 342.2953pt x 112.55254pt.
+ [5
+
+ <./figures/png/Screenshot_20240308_165327.png>]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 359.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 359.
+ [6
+
+]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 \end{frame}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 \end{frame}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 \end{frame}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 \end{frame}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 \end{frame}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 \end{frame}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 \end{frame}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 \end{frame}
+                 
+? 
+<figures/pdf/nhitsvsch_105421.pdf, id=81, 569.12625pt x 279.0425pt>
+File: figures/pdf/nhitsvsch_105421.pdf Graphic file (type pdf)
+
+<use figures/pdf/nhitsvsch_105421.pdf>
+Package pdftex.def Info: figures/pdf/nhitsvsch_105421.pdf used on input line 41
+1.
+(pdftex.def)             Requested size: 171.14764pt x 83.9135pt.
+
+<figures/pdf/nhitsvsch_105423.pdf, id=82, 569.12625pt x 275.0275pt>
+File: figures/pdf/nhitsvsch_105423.pdf Graphic file (type pdf)
+
+<use figures/pdf/nhitsvsch_105423.pdf>
+Package pdftex.def Info: figures/pdf/nhitsvsch_105423.pdf used on input line 41
+1.
+(pdftex.def)             Requested size: 171.14764pt x 82.70612pt.
+
+<figures/pdf/nhitsvsch_105420.pdf, id=83, 569.12625pt x 275.0275pt>
+File: figures/pdf/nhitsvsch_105420.pdf Graphic file (type pdf)
+
+<use figures/pdf/nhitsvsch_105420.pdf>
+Package pdftex.def Info: figures/pdf/nhitsvsch_105420.pdf used on input line 41
+1.
+(pdftex.def)             Requested size: 171.14764pt x 82.70612pt.
+ [7
+
+ <./figures/pdf/nhitsvsch_105421.pdf, page is rotated 90 degrees> <./figures/pd
+f/nhitsvsch_105423.pdf, page is rotated 90 degrees> <./figures/pdf/nhitsvsch_10
+5420.pdf, page is rotated 90 degrees>] <figures/pdf/waveform_50_link_2.pdf, id=
+224, 569.12625pt x 388.45125pt>
+File: figures/pdf/waveform_50_link_2.pdf Graphic file (type pdf)
+
+<use figures/pdf/waveform_50_link_2.pdf>
+Package pdftex.def Info: figures/pdf/waveform_50_link_2.pdf used on input line 
+449.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wfgkghl})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.449 \end{frame}
+                 
+<figures/pdf/waveform_50_link_2_neg.pdf, id=225, 569.12625pt x 388.45125pt>
+File: figures/pdf/waveform_50_link_2_neg.pdf Graphic file (type pdf)
+
+<use figures/pdf/waveform_50_link_2_neg.pdf>
+Package pdftex.def Info: figures/pdf/waveform_50_link_2_neg.pdf used on input l
+ine 449.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wfgkgnvjk
+hl}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.449 \end{frame}
+                 
+<figures/pdf/waveform_biterror.pdf, id=226, 569.12625pt x 388.45125pt>
+File: figures/pdf/waveform_biterror.pdf Graphic file (type pdf)
+
+<use figures/pdf/waveform_biterror.pdf>
+Package pdftex.def Info: figures/pdf/waveform_biterror.pdf used on input line 4
+49.
+(pdftex.def)             Requested size: 171.14764pt x 116.81485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.449 \end{frame}
+                 
+Overfull \vbox (5.51889pt too high) detected at line 449
+ []
+
+[8
+
+ <./figures/pdf/waveform_50_link_2.pdf, page is rotated 90 degrees> <./figures/
+pdf/waveform_50_link_2_neg.pdf, page is rotated 90 degrees> <./figures/pdf/wave
+form_biterror.pdf, page is rotated 90 degrees>]
+<figures/pdf/fs_vs_ch.pdf, id=363, 569.12625pt x 388.45125pt>
+File: figures/pdf/fs_vs_ch.pdf Graphic file (type pdf)
+
+<use figures/pdf/fs_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/fs_vs_ch.pdf used on input line 483.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.483 \end{frame}
+                  <figures/pdf/q_vs_ch.pdf, id=364, 569.12625pt x 388.45125pt>
+File: figures/pdf/q_vs_ch.pdf Graphic file (type pdf)
+
+<use figures/pdf/q_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/q_vs_ch.pdf used on input line 483.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.483 \end{frame}
+                 
+<figures/pdf/bl_vs_ch.pdf, id=365, 569.12625pt x 388.45125pt>
+File: figures/pdf/bl_vs_ch.pdf Graphic file (type pdf)
+
+<use figures/pdf/bl_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/bl_vs_ch.pdf used on input line 483.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.483 \end{frame}
+                 
+<figures/pdf/ph_vs_ch.pdf, id=366, 569.12625pt x 388.45125pt>
+File: figures/pdf/ph_vs_ch.pdf Graphic file (type pdf)
+
+<use figures/pdf/ph_vs_ch.pdf>
+Package pdftex.def Info: figures/pdf/ph_vs_ch.pdf used on input line 483.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.483 \end{frame}
+                 
+Overfull \vbox (17.41467pt too high) detected at line 483
+ []
+
+[9
+
+ <./figures/pdf/fs_vs_ch.pdf, page is rotated 90 degrees> <./figures/pdf/q_vs_c
+h.pdf, page is rotated 90 degrees> <./figures/pdf/bl_vs_ch.pdf, page is rotated
+ 90 degrees> <./figures/pdf/ph_vs_ch.pdf, page is rotated 90 degrees>]
+<figures/pdf/noisy.pdf, id=546, 569.12625pt x 388.45125pt>
+File: figures/pdf/noisy.pdf Graphic file (type pdf)
+
+<use figures/pdf/noisy.pdf>
+Package pdftex.def Info: figures/pdf/noisy.pdf used on input line 516.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.516 \end{frame}
+                  <figures/pdf/glitches.pdf, id=547, 569.12625pt x 391.4625pt>
+File: figures/pdf/glitches.pdf Graphic file (type pdf)
+
+<use figures/pdf/glitches.pdf>
+Package pdftex.def Info: figures/pdf/glitches.pdf used on input line 516.
+(pdftex.def)             Requested size: 154.03183pt x 105.94716pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.516 \end{frame}
+                 
+<figures/pdf/glitcheswf.pdf, id=548, 569.12625pt x 388.45125pt>
+File: figures/pdf/glitcheswf.pdf Graphic file (type pdf)
+
+<use figures/pdf/glitcheswf.pdf>
+Package pdftex.def Info: figures/pdf/glitcheswf.pdf used on input line 516.
+(pdftex.def)             Requested size: 154.03183pt x 105.13217pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.516 \end{frame}
+                 
+Overfull \vbox (10.90431pt too high) detected at line 516
+ []
+
+[10
+
+ <./figures/pdf/noisy.pdf, page is rotated 90 degrees> <./figures/pdf/glitches.
+pdf, page is rotated 90 degrees> <./figures/pdf/glitcheswf.pdf, page is rotated
+ 90 degrees>] <figures/pdf/p.pdf, id=684, 569.12625pt x 478.78876pt>
+File: figures/pdf/p.pdf Graphic file (type pdf)
+
+<use figures/pdf/p.pdf>
+Package pdftex.def Info: figures/pdf/p.pdf used on input line 554.
+(pdftex.def)             Requested size: 145.47653pt x 122.38539pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.554 \end{frame}
+                  <figures/pdf/phtmean.pdf, id=685, 569.12625pt x 388.45125pt>
+File: figures/pdf/phtmean.pdf Graphic file (type pdf)
+
+<use figures/pdf/phtmean.pdf>
+Package pdftex.def Info: figures/pdf/phtmean.pdf used on input line 554.
+(pdftex.def)             Requested size: 145.47653pt x 99.29381pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.554 \end{frame}
+                  <figures/pdf/tmean.pdf, id=686, 569.12625pt x 388.45125pt>
+File: figures/pdf/tmean.pdf Graphic file (type pdf)
+
+<use figures/pdf/tmean.pdf>
+Package pdftex.def Info: figures/pdf/tmean.pdf used on input line 554.
+(pdftex.def)             Requested size: 140.34232pt x 95.79079pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.554 \end{frame}
+                 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.554 \end{frame}
+                 
+? 
+<figures/png/pres.png, id=687, 881.694pt x 678.6153pt>
+File: figures/png/pres.png Graphic file (type png)
+
+<use figures/png/pres.png>
+Package pdftex.def Info: figures/png/pres.png used on input line 554.
+(pdftex.def)             Requested size: 162.58974pt x 125.13802pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:wffytl}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.554 \end{frame}
+                 
+Overfull \vbox (43.43785pt too high) detected at line 554
+ []
+
+[11
+
+ <./figures/pdf/p.pdf, page is rotated 90 degrees> <./figures/pdf/phtmean.pdf, 
+page is rotated 90 degrees> <./figures/pdf/tmean.pdf, page is rotated 90 degree
+s> <./figures/png/pres.png>] [12
+
+] [13
+
+]
+\tf@nav=\write6
+\openout6 = `main.nav'.
+
+\tf@toc=\write7
+\openout7 = `main.toc'.
+
+\tf@snm=\write8
+\openout8 = `main.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
+ (tmp/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 579.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: <no file>.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 579.
+ ) 
+Here is how much of TeX's memory you used:
+ 19935 strings out of 495063
+ 385646 string characters out of 3182201
+ 454546 words of memory out of 3000000
+ 22547 multiletter control sequences out of 15000+200000
+ 50850 words of font info for 70 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 48i,16n,57p,425b,717s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tmp/main.pdf (13 pages, 8133878 bytes).
+PDF statistics:
+ 886 PDF objects out of 1000 (max. 8388607)
+ 418 compressed objects within 5 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+
